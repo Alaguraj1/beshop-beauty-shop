@@ -20,6 +20,7 @@ export const Shop = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState("asc");
 
+  
   useEffect(() => {
     axios
       .get(`https://sreevidhya.co.in/file//wp-json/cocart/v1/products/categories/?per_page=100`)
